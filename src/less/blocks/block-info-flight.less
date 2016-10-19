@@ -1,0 +1,116 @@
+/*	----------------------------------------------------------------------------------------------------
+*
+*	 Bloque info-flight
+*
+------------------------------------------------------------------------------------------------------ */
+
+.block-info-flight{
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	 display: inline-block;
+	 width: 100%;
+	.city{
+		font-size: 35px;
+		margin: 15px;
+		position: relative;
+		top:10px;
+	}
+	
+	.num-flight {
+		
+		font-size: 16px;
+	}
+	
+	.flights-info{
+		
+		position:relative;
+		
+		[class*="icon-"]{
+			position: absolute;
+			right: 15px;
+			top:5px;
+		}
+		
+		//background:url('../img/bg-clouds.jpg');
+		background: rgba(6, 24, 37, .6);
+		background-repeat: no-repeat;
+		background-size: cover;		
+		
+		.info{
+			padding-bottom: 0px;
+			padding-top: 20px;
+			border-bottom: 1px solid #44638a;
+			position: relative;
+			
+		}
+		
+	}
+	
+}
+
+
+.delayed	{
+	
+	border-radius: 4px;
+	padding: 5px;
+	padding-left:25px;
+	display: inline-block;	
+	position: relative;
+	
+	&.ontime{
+		background:@color-success;
+
+		&:before{
+			content: "";
+			display: block;
+			width: 15px;
+			height: 15px;
+			background: url('../img/icons/icon-check.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			position: absolute;
+			left: 5px;
+			top:5px;
+		}
+
+		
+	}
+	&.delay{
+		background:@color-warning2;
+
+		&:before{
+			content: "";
+			display: block;
+			width: 15px;
+			height: 15px;
+			background: url('../img/icons/icon-alert-white.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			position: absolute;
+			left: 5px;
+			top:5px;
+		}
+
+		
+	}
+	&.cancelled{
+		background:@color-danger;
+
+		&:before{
+			content: "";
+			display: block;
+			width: 15px;
+			height: 15px;
+			background: url('../img/icons/icon-alert-white.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			position: absolute;
+			left: 5px;
+			top:5px;
+		}
+
+		
+	}	
+	
+}

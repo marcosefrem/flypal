@@ -1,0 +1,63 @@
+/*	----------------------------------------------------------------------------------------------------
+*
+*	 Bloque login
+*
+------------------------------------------------------------------------------------------------------ */
+
+
+.block-login	{
+
+	display: block;
+	margin: 40px;
+	
+	color:@color-white;
+	text-align: center;
+	@media (max-width: 359px) {
+		margin: 10px;
+		
+
+	}		
+	.logo{
+		max-width: 100px;
+		display: block;
+		margin: auto;
+		margin-bottom: 45px;
+		
+		
+
+		@media (min-width: 767px) {
+			max-width: 150px;
+			margin-bottom: 90px;
+		}	
+		@media (max-width: 359px) {
+			margin-bottom: 15px;
+			
+	
+		}	
+		
+		&.small{
+			
+			@media (max-width: 767px) {
+				max-width: 80px;
+
+			}				
+			
+		}
+			
+		
+
+	}
+	
+}
+
+
+.translateY{
+	
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);	
+	left: 0;
+	right: 0;
+		
+}
