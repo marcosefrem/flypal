@@ -61,12 +61,22 @@ main{
 
 
 .date{
-	background: @color-secondary;
-	color:@color-white;
-	height: 30px;
-	margin-bottom: 20px;
+	position: relative;
+	&:before{
+		position: absolute;
+		right: 10px;
+		top:7.5px;
+		width: 30px;
+		height: 30px;
+		background: url('../img/icons/icon-calendar-white.png');
+		background-size: 100%;
+		content: "";
+	}	
+	.input-group-addon{
+		display: none;
+	}
 	.icon	{
-		position: relative;
+		position: absolute;
 		background: @color-white;
 		height: 30px;
 		width: 30px;

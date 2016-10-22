@@ -1,0 +1,119 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header-app-add.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public bg-clouds-nologo" role="main">
+				
+	
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						
+						<div class="padding-tb-20">
+						
+							<form>
+								<div class="row">
+									
+									<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
+				
+									  <div class="form-group">
+										    <label for="" class="sr-only">Compañía</label>
+										    <input type="text" class="form-control" id="" placeholder="Compañía">
+									  </div>
+									</div>
+								</div><! / -- row -->	
+								<div class="row">
+									
+									<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
+				
+									  <div class="form-group">
+										    <label for="" class="sr-only">Nº de vuelo</label>
+										    <input type="text" class="form-control" id="" placeholder="Nº de vuelo">
+									  </div>
+									</div>
+								</div><! / -- row -->	
+								<div class="row">
+									
+									<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
+				
+										  
+						                <div class='date js-datepicker' id='datetimepicker1'>
+							                
+											<label for="" class="sr-only">Salida</label>
+						                    <input type='text' class="form-control" readonly placeholder="Salida/Vie. 26 Agosto"/>
+						                    <span class="input-group-addon glyphicon">
+						                        <span class="icon-calendar xs"></span>
+						                    </span>
+						                </div>
+															  
+									  
+									  
+									</div>
+								</div><! / -- row -->	
+								<div class="row">
+									
+									<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
+				
+									  <div class="form-group">
+										    <label for="" class="sr-only">Nº de confirmación</label>
+										    <input type="text" class="form-control" id="" placeholder="Número de confirmación (opcional)">
+									  </div>
+									</div>
+								</div><! / -- row -->																	
+
+
+								<div class="row">
+									
+										<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+											<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#error-login">Continuar</button>
+		
+										</div>
+								</div><! / -- row -->								
+
+							</form>
+							
+							
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				
+			</div>
+	
+
+
+		</main>	
+	    
+	    
+
+		<!-- Modal -->
+		<div class="modal fade" id="error-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+			        	<span class="text-color-warning"><img src="img/icons/icon-warning.png" class="icon xs" alt="">Error</span>
+			      </div>
+			      <div class="modal-body">
+				      <div class="text-center">
+			      		El ususario y la contraseña que has introducido son incorrectos
+				      </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			      </div>
+				</div>
+		  	</div>
+		</div>	    
+			   
+	    
+
+   
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}

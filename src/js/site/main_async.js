@@ -24,6 +24,20 @@ function initAsync(){
 		locale: 'es'
 	});
 	
+	$('.datepicker-days').on('click', 'td.day', function (e) {
+        e.preventDefault();
+        $('.js-datepicker').datepicker('hide');
+        return false;
+    });	
+	$('.datepicker').click(function(){
+	});
+	
+	$('.js-datepicker').on('changeDate', function(ev){
+ 	   $(this).datepicker('hide');
+	});
+	
+	
+	
 	//Tooltips
 	$('[data-toggle="tooltip"]').tooltip({
 	    animated: 'fade',
@@ -165,7 +179,7 @@ $(function() {
 	});
 	
 
-	
+
 	/*	--------------------------------------------------
 		Llamada de funciones
 	-------------------------------------------------- */

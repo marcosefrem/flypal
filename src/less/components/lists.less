@@ -16,6 +16,56 @@ ul {
 		}
 	}
 	
+	&.list-interlaced{
+		
+		li{
+			margin-bottom: 15px;
+			padding-bottom: 15px;
+			
+			
+			.block-state-flight{
+				top: -10px;
+				position: relative;
+			}
+			
+			&:before{
+				content: " ";
+				border-radius: 50%;
+				border:1px solid @color-white;
+				display: block;
+				width: 15px;
+				height: 15px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}	
+			
+			&:after{
+				
+				display: block;
+				content: "";
+				width: 1px;
+				height: 100%;
+				background: @color-white;
+				position: absolute;
+				left: 7.5px;
+				top: 15px;				
+				
+			}	
+			
+			&:last-child{
+				&:after{
+					display: none;
+				}
+				
+				
+			}
+			
+		}
+	}
+	
+	
+	
 	&.list-inline{
 		&.separations{
 			li{

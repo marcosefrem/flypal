@@ -43,6 +43,11 @@
 			border-bottom: 1px solid #44638a;
 			position: relative;
 			
+			
+			&.underline{
+				border-bottom: 1px solid #5f6f86;
+			}
+			
 		}
 		
 	}
@@ -57,7 +62,7 @@
 	padding-left:25px;
 	display: inline-block;	
 	position: relative;
-	
+	font-size: 11px;
 	&.ontime{
 		background:@color-success;
 
@@ -113,4 +118,28 @@
 		
 	}	
 	
+}
+
+
+.block-state-flight{
+	background: rgba(6, 24, 37, .6);
+	padding: 15px;
+	margin-left: 20px;
+	position: relative;
+	border-radius: 4px;
+	font-size: 16px;
+	&:before{
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent #061826 transparent transparent;
+		opacity: .6;
+		left: -10px;
+		top:10px;
+		
+
+	}	
 }

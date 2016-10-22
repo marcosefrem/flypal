@@ -1,0 +1,149 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header-app-scales.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public bg-clouds-nologo" role="main">
+
+
+			<div class="block-info padding-b-0 margin-b-30">
+				<div class="flights-info">
+					<div class="info underline">
+				
+						<div class="container">
+						<div class="row">
+							<div class="col-xs-6">
+								<span class="h3">KLM</span>											
+							</div>
+						</div>								
+						<div class="row">
+							<div class="col-xs-6">
+								<span class="h2 text-color-primary">KLM 6996</span>	
+							</div>
+							
+						</div>
+					
+					</div>
+					
+					</div>
+					
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row margin-b-15">
+							<div class="col-xs-12">
+								<span class="h3">Selecciona un aeropuerto de origen</span>											
+							</div>
+						</div>								
+							<div class="row">
+							<div class="col-xs-12">
+
+								<div class="form-group  margin-b-15">													
+									<div class="radio">
+										<input type="radio" id="radio1" name="flight"> 
+										<label for="radio1">
+											<strong>GLA</strong>  Glasgow
+										</label>
+									</div>									
+								</div>							
+								<div class="form-group  margin-b-15">													
+									<div class="radio">
+										<input type="radio" id="radio2" name="flight"> 
+										<label for="radio2">
+											<strong>EDI</strong>  Edinburgo
+										</label>
+									</div>									
+								</div>		
+								
+
+							</div>
+							
+						</div>
+					
+						</div>
+					
+					</div>					
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row margin-b-15">
+							<div class="col-xs-12">
+								<span class="h3">Selecciona un aeropuerto de destino</span>											
+							</div>
+						</div>								
+							<div class="row">
+							<div class="col-xs-12">
+
+								<div class="form-group  margin-b-15">													
+									<div class="radio">
+										<input type="radio" id="radio3" name="flight2"> 
+										<label for="radio3">
+											<strong>GLA</strong>  Glasgow
+										</label>
+									</div>									
+								</div>							
+								<div class="form-group  margin-b-15">													
+									<div class="radio">
+										<input type="radio" id="radio4" name="flight2"> 
+										<label for="radio4">
+											<strong>EDI</strong>  Edinburgo
+										</label>
+									</div>									
+								</div>		
+								
+
+							</div>
+							
+						</div>
+					
+						</div>
+					
+					</div>						
+					
+				</div>
+			</div>
+
+
+			<div class="container">
+
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#error-login">Continuar</button>
+	
+						</div>
+				</div><! / -- row -->	
+				
+			</div>
+
+		</main>	
+	    
+	    
+
+		<!-- Modal -->
+		<div class="modal fade" id="error-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+			        	<span class="text-color-warning"><img src="img/icons/icon-warning.png" class="icon xs" alt="">Error</span>
+			      </div>
+			      <div class="modal-body">
+				      <div class="text-center">
+			      		El ususario y la contraseña que has introducido son incorrectos
+				      </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			      </div>
+				</div>
+		  	</div>
+		</div>	    
+			   
+	    
+
+   
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}

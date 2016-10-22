@@ -1,0 +1,226 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header-app-inside.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public bg-clouds-nologo" role="main">
+			
+
+			
+		
+
+		  <!-- Tab panes -->
+		  <div class="tab-content">
+		    	<div role="tabpanel" class="tab-pane active" id="flight">
+			    	
+			    	
+			    	<div class="block-info-flight">
+			    	
+			    		<div class="container margin-b-10">
+					    	<div class="row">
+						    	
+						    	<div class="col-xs-12 text-center">
+							    	
+							    	<date class="display-block">LUN, 22 AGO. 2016</date>
+							    	
+							    	<span class="city">GLA</span><img src="img/icons/icon-plane.png" class="icon md" alt=""><span class="city">AMS</span>
+							    	<span class="num-flight display-block margin-b-30">KLM 6996</span>
+							    	
+							    	
+						    	</div>
+						    	
+						    	
+					    	</div>
+					    	
+					    	<div class="row">
+						    	<div class="col-xs-6">
+							    	
+							    	Salida en 2 hr 26 min
+						    	</div>
+						    	<div class="col-xs-6">
+							    	
+							    	<div class="pull-right text-right">
+								    	
+								    	<span class="delayed ontime caps">En hora</span>
+								    	<span class="delayed delay caps">Retraso</span>
+								    	<span class="delayed cancelled caps">Cancelado</span>
+								    	
+								    	
+							    	</div>
+							    	
+						    	</div>
+						    	
+						    	
+				    	</div>		
+				    	
+			    		</div>	  
+			    	
+			    	
+			    	
+						<div class="flights-info margin-b-30">
+							
+							
+							<div class="info">
+								
+							
+								
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-6">
+											<span class="h3">SALIDA</span>											
+										</div>
+									</div>								
+									<div class="row">
+										<div class="col-xs-6">
+											<strong>GLA</strong> Glasgow
+											<span class="h2 text-color-primary">11:45 AM</span>	
+										</div>
+										<div class="col-xs-3">
+											<div class="text-center">
+												Terminal
+												<span class="display-block text-color-primary">2</span>
+												
+											</div>
+											
+											
+										</div>
+										<div class="col-xs-3">
+											
+											<div class="text-center">
+												Puerta
+												<span class="display-block text-color-primary">23C</span>
+												
+											</div>										
+											
+										</div>
+										
+										
+										
+									</div>
+								
+								</div>
+								
+							</div>
+							<div class="info">
+								
+							
+								
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-6">
+											<span class="h3">LLEGADA</span>											
+										</div>
+									</div>								
+									<div class="row">
+										<div class="col-xs-6">
+											<strong>GLA</strong> Glasgow
+											<span class="h2 text-color-primary">11:45 AM</span>	
+										</div>
+										<div class="col-xs-3">
+											<div class="text-center">
+												Terminal
+												<span class="display-block text-color-primary">2</span>
+												
+											</div>
+											
+											
+										</div>
+										<div class="col-xs-3">
+											
+											<div class="text-center">
+												Puerta
+												<span class="display-block text-color-primary">23C</span>
+												
+											</div>										
+											
+										</div>
+										
+										
+										
+									</div>
+								
+								</div>
+								
+							</div>
+							
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-6"><span class="text-color-white padding-tb-10 display-inline-block">Duración 2h 30min</span></div>
+								</div>
+													
+							
+
+							</div>	
+						</div>
+						
+						<div class="container">
+							
+							
+							<div class="row">
+									
+									<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">
+								
+										<button role="button" type="button"  class="btn btn-default">Añadir otro vuelo</button>
+								
+									</div>
+									<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">
+								
+										<button role="button" type="button"  class="btn btn-primary">Finalizar</button>
+								
+									</div>									
+									
+									
+									
+								</div><! / -- row -->							
+								    	
+						</div>
+			    	
+			    	
+			    	
+			    	
+			    	</div>  	
+			    	
+			    	
+			    	
+			    	
+			    	
+			    	
+			    	
+			    	
+			    	
+		    	</div>
+		  </div>
+		
+
+
+		</main>	
+	    
+	    
+
+		<!-- Modal -->
+		<div class="modal fade" id="error-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+			        	<span class="text-color-warning"><img src="img/icons/icon-warning.png" class="icon xs" alt="">Error</span>
+			      </div>
+			      <div class="modal-body">
+				      <div class="text-center">
+			      		El ususario y la contraseña que has introducido son incorrectos
+				      </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			      </div>
+				</div>
+		  	</div>
+		</div>	    
+			   
+	    
+
+   
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}
