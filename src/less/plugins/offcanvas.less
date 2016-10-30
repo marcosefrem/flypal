@@ -66,7 +66,20 @@
 			    transform: rotate(-45deg);		
 			    top:-3px;		
 			}			
-			
+			&[data-side="right"]{
+				left: auto;
+				right: 10px;
+				top:19px;
+				span{
+					width: 5px;
+					height: 5px;
+					border-radius: 50%;
+					&.icon-bar + .icon-bar{
+						top:auto;
+					}
+				}
+
+			}
 		}
 		.icon-bar {
 			height: 5px;
@@ -95,7 +108,7 @@
 	}
 
 .in.left{
-	.off-canvas{
+	.off-canvas[data-side="left"] {
 		left: 0;
 		transition: .5s;
 	}
@@ -130,7 +143,7 @@
 		&[data-side="right"]{
 			
 			left: auto;
-			right: -100%;
+			//right: -100%;
 			
 			//iPad
 			@media (max-width: @screen-max-sm) {
@@ -140,9 +153,9 @@
 			}				
 			//Móvil
 			@media (max-width: @screen-max-xs) {
-				width: 100%;
+				//width: 100%;
 				left: auto;
-				right: -100%;
+				//right: -100%;
 			}	
 			
 		}		

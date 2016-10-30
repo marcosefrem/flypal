@@ -38,7 +38,7 @@ module.exports = function(grunt) {
 		system: 'html/',
 		tplPath: 'src/',
 		tpl: 'html',
-		web: 'localhost/Flypal/web/html/'
+		web: 'localhost/Flypal_app/web/html/'
 	};	
 	
 	//Necesario para el updater de dependencias
