@@ -17,7 +17,8 @@ $(function() {
 	
 	
 	windowHeight = $(window).height();	
-	$('main.bg-clouds-nologo').css('min-height', windowHeight -50);
+	var heightHeader =$('header').outerHeight();
+	$('main.bg-clouds-nologo').css('min-height', windowHeight -heightHeader);
 		
 	
 	placeVideo();
