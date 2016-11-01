@@ -93,9 +93,9 @@ $(function() {
 		indicar siempre descripcion y documentar el script
 		segun se vaya ejecutando.
 	-------------------------------------------------- */
-    $('.menu-canvas a + .caret').on('click',function(e){
+    $('.menu-canvas a').on('click',function(e){
 	   
-		$(this).next().toggleClass('in');
+		$(this).parent().find('> .collapse').toggleClass('in');
 		$(this).toggleClass('opened');
     });
 

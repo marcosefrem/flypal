@@ -6,12 +6,44 @@
 //Cambiar XS por SM si lo queremos en iPad
 @media (max-width: @screen-max-xs) {
 		
+		
+	.in {
+		&.left{
+			button.navbar-toggle {
+				span{
+					transform: rotate(45deg);
+					top:5px;
+				
+					&:nth-child(2n){
+						opacity: 0;
+					}
+					
+					&:last-child{
+						transform: rotate(-45deg);
+						top:-7px;
+					}
+				}	
+				
+			}
+		}
+	}	
+		
 	//Estilos del botón	
 	button.navbar-toggle {
 		width: 20px;
 		height: 20px;
 		
+		span{
+			 transition: all 0.5s ease;
+			 opacity: 1;
+		}
+		
+		
+		
 	}
+	
+	
+	
 	
 	//Estilos del menu
 	.off-canvas {
@@ -19,6 +51,69 @@
 		top:57px;
 		//Version izquierda
 		&[data-side="left"]{
+			
+			
+			li{
+				background: @color-white;
+				margin-bottom: 1px;
+				.caret{
+					background: url('../img/icon-caret-primary.png');
+					background-repeat: no-repeat;
+					width: 15px;
+					height: 15px;
+					background-size: 100%;
+					transform: rotate(180deg);
+					
+				
+
+						
+					}
+					
+
+				a{
+					color:@color-primary;
+					display: block;
+					padding-top: 15px;
+					padding-bottom: 15px;
+				
+					&.opened{
+						
+						background: @color-primary;
+						color:@color-white;
+						 + .caret{
+							background: url('../img/icon-caret-white.png');
+							transform: rotate(0deg);	
+							background-size: 100%;	
+							background-repeat: no-repeat;
+																				
+						}
+					
+					}
+					
+					&.log-out{
+						background: @color-dark-blue;
+						color: @color-white;
+					}
+				}
+				
+				ul{
+					background: @color-grey;
+				}
+				
+				li{
+					margin-left: 0;
+					background: @color-grey-softest;
+					&:last-child{
+						margin-bottom: 0;
+					}
+					a{
+						margin-left: 0;
+						color: @color-text-dark;
+					}
+				}
+				
+			}
+			
 
 		}		
 
