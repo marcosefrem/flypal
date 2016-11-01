@@ -10,19 +10,26 @@
 	.in {
 		&.left{
 			button.navbar-toggle {
-				span{
-					transform: rotate(45deg);
-					top:5px;
 				
-					&:nth-child(2n){
-						opacity: 0;
-					}
+				&[data-target="#off-canvas-left"]{
 					
-					&:last-child{
-						transform: rotate(-45deg);
-						top:-7px;
-					}
-				}	
+					span{
+						transform: rotate(45deg);
+						top:5px;
+					
+						&:nth-child(2n){
+							opacity: 0;
+						}
+						
+						&:last-child{
+							transform: rotate(-45deg);
+							top:-7px;
+						}
+					}						
+					
+					
+				}
+				
 				
 			}
 		}
@@ -75,7 +82,9 @@
 					display: block;
 					padding-top: 15px;
 					padding-bottom: 15px;
-				
+					&:hover{
+						text-decoration: none;	
+					}				
 					&.opened{
 						
 						background: @color-primary;
@@ -109,6 +118,12 @@
 					a{
 						margin-left: 0;
 						color: @color-text-dark;
+						&:hover{
+							text-decoration: none;	
+						}
+
+
+						
 					}
 				}
 				
@@ -120,6 +135,34 @@
 		//Version derecha
 		&[data-side="right"]{
 			z-index: 9999!important;
+			background: @color-grey;
+			
+			.inner-nav{
+				padding: 15px;
+				padding-top: 0;
+			}
+			.menu-canvas{
+			    margin-left: -15px;
+				margin-right: -15px;
+			}
+			.icon{
+				margin-right: 15px;
+				margin-left: 15px;
+				margin-top: 7.5px;
+			}
+			li{
+				border-bottom: 1px solid #636363;
+
+			}
+			a{
+				margin-left: 45px;
+				color:#636363;
+				padding-top: 15px;
+				padding-bottom: 15px;
+				&:hover{
+					text-decoration: none;	
+				}
+			}
 		}		
 		
 		//Version top
