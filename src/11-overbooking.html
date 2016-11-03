@@ -1,0 +1,170 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header-app-reclamacion-overbooking.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public bg-clouds-nologo" role="main">
+
+
+			<div class="block-info padding-b-0 margin-b-30">
+				<div class="flights-info">
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<span class="h3">
+										Has elegido: <strong class="display-block margin-b-15">vuelo alternativo + compensación</strong>
+										Estos vuelos son los vuelos con plazas disponibles. Selecciona el que te hayan ofrecido y pulsa continuar.
+									
+									
+									</span>											
+								</div>
+							</div>								
+
+					
+						</div>
+					
+					</div>
+					
+					<div class="bg-color-primary-dark">
+						
+						<div class="container">
+							<div class="row">						
+												
+								<div class="col-xs-3"><div class="text-center">Vuelo</div></div>
+								<div class="col-xs-3"><div class="text-center">Esc.</div></div>
+								<div class="col-xs-3"><div class="text-center">Retr.</div></div>
+								<div class="col-xs-3"><div class="text-center">Compens.</div></div>
+						
+							</div>
+						</div>
+
+					</div>
+					
+					<div>
+						
+						
+						<div class="container">
+							<div class="row">						
+												
+								<div class="col-xs-3">
+									
+									<div class="form-group margin-b-0">													
+										<div class="radio">
+											<input type="radio" id="radio1" name="flight"> 
+											<label for="radio1">
+												IB 3724
+											</label>
+										</div>									
+									</div>										
+									
+									
+								</div>
+								<div class="col-xs-3"><div class="text-center">0</div></div>
+								<div class="col-xs-3"><div class="text-center">-12:25</div></div>
+								<div class="col-xs-3"><div class="text-center">250€</div></div>
+						
+							</div>
+						</div>						
+						
+						
+						
+					</div>
+					
+					
+					
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row">
+							<div class="col-xs-12">
+
+								<div class="form-group margin-b-0">													
+									<div class="radio">
+										<input type="radio" id="radio1" name="flight"> 
+										<label for="radio1">
+											Vuelo alternativo + compensación de hasta 125€
+										</label>
+									</div>									
+								</div>							
+	
+								
+							</div>
+							
+						</div>
+					
+						</div>
+					
+					</div>					
+					
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row">
+							<div class="col-xs-12">
+
+								<div class="form-group margin-b-0">													
+									<div class="radio">
+										<input type="radio" id="radio2" name="flight"> 
+										<label for="radio2">
+											Reembolso de billete + compensación económica de 250€
+										</label>
+									</div>									
+								</div>	
+							</div>
+							</div>
+						</div>				
+				
+
+					
+					</div>		
+															
+					
+				</div>
+			</div>
+
+
+			<div class="container">
+
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#error-login">Continuar</button>
+	
+						</div>
+				</div><! / -- row -->	
+				
+			</div>
+
+		</main>	
+	    
+	    
+
+		<!-- Modal -->
+		<div class="modal fade" id="error-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+			        	<span class="text-color-warning"><img src="img/icons/icon-warning.png" class="icon xs" alt="">Error</span>
+			      </div>
+			      <div class="modal-body">
+				      <div class="text-center">
+			      		El ususario y la contraseña que has introducido son incorrectos
+				      </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			      </div>
+				</div>
+		  	</div>
+		</div>	    
+			   
+	    
+
+   
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}
