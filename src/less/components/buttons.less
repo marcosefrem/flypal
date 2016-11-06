@@ -7,6 +7,46 @@
 	width: 100%;
 	font-size: 16px;
 	
+	
+	
+	&.btn-dropdown{
+		background: @color-white;
+		color:@color-primary;
+		text-align: left;
+
+		&:before{
+			display: block;
+			background: #d2d2d2;
+			width: 1px;
+			height: 100%;
+			position: absolute;
+			right: 40px;
+			top:0;
+			content: "";
+		}
+		.caret{
+			border:0;
+			position: absolute;
+			right: 13px;
+			top:13px;
+			width: 15px;
+			height: 15px;
+			background: url('../img/icons/icon-arrow-primary.png');
+			background-size: 100%;
+			transform: rotate(90deg);
+			
+
+			
+		}
+		
+		&[aria-expanded="true"] {
+			border-radius: 6px 6px 0px 0px;
+			.caret{
+				transform: rotate(-90deg);
+			}
+		}
+	}
+	
 	&.btn-text{
 		color:@color-white;
 		font-size: 16px;
