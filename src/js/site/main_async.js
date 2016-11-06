@@ -75,16 +75,10 @@ $(function() {
 	
 	
 	var anchoVentana =$(window).width();
-	if(anchoVentana<767){
+	if(anchoVentana<991){
+		//$('#header-app').affix();
+		
 
-		$('#header').affix({
-		  offset: {
-		    top: 0,
-		    bottom: function () {
-		      //return (this.bottom = $('.footer').outerHeight(true));
-		    }
-		  }
-		});	
 
 	}
 
