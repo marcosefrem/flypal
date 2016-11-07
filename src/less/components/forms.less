@@ -652,6 +652,24 @@ select.selectpicker {
 .date input[readonly]{
 
 		  background: rgba(255, 255, 255, 0.15) none repeat scroll 0 0!important;
+
+			&::-webkit-input-placeholder {
+			   color: white;
+			}
+			
+			&:-moz-placeholder { /* Firefox 18- */
+			   color: white;  
+			}
+			
+			&::-moz-placeholder {  /* Firefox 19+ */
+			   color: white;  
+			}
+			
+			&:-ms-input-placeholder {  
+			   color: white;  
+			}
+
+
 }
 
 .datepicker{
