@@ -91,7 +91,7 @@ module.exports = function(grunt) {
 		    },		
 
 		    	
-
+			/*
 		    jshint: {
 		        files: ['<%= globalConfig.tplPath  %>/js/site/*.js'],
 		        tasks: ['newer:jshint'],
@@ -99,7 +99,8 @@ module.exports = function(grunt) {
 		            spawn: false,
 		            livereload: true,
 		        },
-		    },		
+		    },	
+		    */	
 		    uglify: {
 		        files: ['<%= globalConfig.tplPath  %>/js/**/*.js'],
 		        tasks: ['newer:uglify'],
@@ -319,11 +320,11 @@ module.exports = function(grunt) {
 	        ]
 		  }
 		},	
-		
+		/*
 		jshint: {
 		   all: ['<%= globalConfig.tplPath  %>/js/site/*.js']
 		},
-		
+		*/
 		//webfont: {
 		//    icons: {
 		//        src: '<%= globalConfig.system  %>/svg/svg-iconfont/*.svg',

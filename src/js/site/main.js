@@ -15,11 +15,21 @@
 $(function() {
 		
 	
-	
+	windowWidth = $(window).width();		
 	windowHeight = $(window).height();	
 	var heightHeader =$('header').outerHeight();
 	$('main.bg-clouds-nologo').css('min-height', windowHeight -heightHeader);
 		
+	
+
+
+	
+	setTimeout(function(){
+	
+		$('header.affix').css('width',windowWidth);
+		$('.tabs-affix').css('width',windowWidth);
+	}, 300);
+
 	
 	placeVideo();
 	
@@ -54,8 +64,20 @@ $(function() {
 		$(this).parent().fadeOut(500);
 		
 	});	
+	/*	--------------------------------------------------
+		Pasar valor al dropdown
+	-------------------------------------------------- */
 
 
+	$('.dropdown.select .dropdown-menu a').click(function(){
+
+		var valor = $(this).text();		
+		var valorRelleno= $(this).closest('.dropdown').find('.value');
+		
+		valorRelleno.text(valor);
+		
+		
+	});
 	/*	--------------------------------------------------
 		Carrusel logos
 	-------------------------------------------------- */
@@ -249,3 +271,6 @@ function placeVideo(){
 	$('#video-home').css('height', windowHeight);
 	
 }		
+
+
+

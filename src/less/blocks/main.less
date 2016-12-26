@@ -29,7 +29,17 @@ main{
 }
 
 
+.tabs-affix{
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+	left: 0;
+	
+	& + .tab-content{
+		padding-top: 70px;
+	}
 
+}
 
 .header-section{
 	padding-top: 75px;
@@ -443,4 +453,23 @@ main{
 		}
 	}
 
+}
+
+
+// Añadidos Open it
+
+ul.list-interlaced li.no-interlaced::after {
+    background: transparent none repeat scroll 0 0;
+}
+.ui-loader.ui-corner-all.ui-body-a.ui-loader-default {
+   display: none;
+}
+.btn.btn-primary.half {
+   width: 48%;
+}
+.btn.btn-text:active {
+   box-shadow: none;
+}
+.btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn.active.focus {
+   outline: 0 none;
 }
