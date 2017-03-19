@@ -445,6 +445,36 @@ main{
 
 }
 
+
+/*************
+
+modal
+
+***********/
+.clearfix{
+	&.underline{
+		border-bottom: 1px solid @color-grey;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}	
+}
+
+.modal{
+	z-index: 9999999!important;
+}
+.modal-header	{
+	position: relative;
+	
+	.close{
+		position: absolute;
+		right: 10px;
+		top:10px;
+		color:@color-white;
+		opacity: .8;
+	}
+}
+
+
 /*************
 
 typeahead
