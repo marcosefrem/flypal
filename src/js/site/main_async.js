@@ -9,6 +9,8 @@
 //Si hacemos una llamada AJAX lanzaremos esta función para recargar los plugins
 function initAsync(){
 	
+
+	
 	if( windowWidth >= xsBreak ){$('.selectpicker').selectpicker();}
 	
 	//Dropdowns
