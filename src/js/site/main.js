@@ -14,6 +14,15 @@
 -------------------------------------------------- */
 $(function() {
 		
+	/*	--------------------------------------------------
+		Funcionalidad dropdown
+	-------------------------------------------------- */		
+		
+   $(".dropdown-menu li a").click(function(){
+
+      $(this).closest('.dropdown-menu').prev().text($(this).text());
+	  $(this).closest('.dropdown-menu').prev().val($(this).text());
+   });		
 	
 	
 	windowHeight = $(window).height();	
