@@ -1,0 +1,65 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header-quees.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public bg-clouds-nologo" role="main">
+
+
+			<div class="block-info padding-b-0 margin-b-30 padding-t-0">
+				<div class="flights-info">
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<span class="h3">
+										<p>Flypal es un compañero de viaje ideal</p>
+										<p>Una app que te ayuda a planificar y organizar tu viaje y que te informa en tiempo real de tus derechos y las obligaciones de las compañías aéreas en caso de incidencia como: overboking, reraso, cancelación...</p>
+									
+									</span>											
+								</div>
+							</div>								
+
+					
+						</div>
+					
+					</div>
+			
+				</div>
+			</div>
+
+
+
+
+		</main>	
+	    
+	    
+
+		<!-- Modal -->
+		<div class="modal fade" id="error-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+			        	<span class="text-color-warning"><img src="img/icons/icon-warning.png" class="icon xs" alt="">Error</span>
+			      </div>
+			      <div class="modal-body">
+				      <div class="text-center">
+			      		El ususario y la contraseña que has introducido son incorrectos
+				      </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			      </div>
+				</div>
+		  	</div>
+		</div>	    
+			   
+	    
+
+   
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}

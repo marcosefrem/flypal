@@ -1,0 +1,164 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header-app-conectar.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public bg-clouds-nologo" role="main">
+
+
+
+			<div class="block-info padding-b-0 padding-t-0 margin-b-30">
+				<div class="flights-info">
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12">
+									<span class="h3">
+										<p>Por favor, indica cuáles son los vuelos que deseas conectar. Opcionalmente puedes introducir un código de reserva, que será utlizado en caso de reclamación.</p>
+									
+									</span>											
+								</div>
+							</div>								
+
+					
+						</div>
+					
+					</div>
+			
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 margin-b-15 margin-b-30">
+						<div class="text-center">
+							<span class="h3 display-inline-block-xs bg-color-primary-dark padding5">
+							
+								<span class="text-color-primary bold">IB 3724</span> <span class="text-color-white bold">MAD-AMS</span>
+								
+								
+							</span>
+						</div>
+					</div>			
+				</div>
+			</div>
+			
+			<div class="block-info padding-b-0 margin-b-30 padding-t-0">
+				<div class="flights-info">
+
+					
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row">
+							<div class="col-xs-12">
+
+								<div class="form-group margin-b-0">													
+									<div class="radio">
+										<input type="radio" id="radio1" name="flight"> 
+										<label for="radio1">
+											UX 6012 PMI - MAD
+										</label>
+									</div>									
+								</div>							
+	
+								
+							</div>
+							
+						</div>
+					
+						</div>
+					
+					</div>					
+					
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row">
+							<div class="col-xs-12">
+
+								<div class="form-group margin-b-0">													
+									<div class="radio">
+										<input type="radio" id="radio2" name="flight"> 
+										<label for="radio2">
+											IB 2708 MAD - BCN
+										</label>
+									</div>									
+								</div>	
+							</div>
+							</div>
+						</div>				
+				
+
+					
+					</div>		
+					<div class="info underline padding-tb-20">
+				
+						<div class="container">
+							<div class="row">
+							<div class="col-xs-12">
+
+								<div class="form-group margin-b-0">													
+									<div class="radio">
+										<input type="radio" id="radio3" name="flight"> 
+										<label for="radio3">
+											IB 2708 MAD - BCN
+										</label>
+									</div>									
+								</div>	
+							</div>
+							</div>
+						</div>				
+				
+
+					
+					</div>		
+															
+					
+				</div>
+			</div>
+
+
+			<div class="container">
+
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#error-login">Continuar</button>
+	
+						</div>
+				</div><! / -- row -->	
+				
+			</div>
+
+		</main>	
+	    
+	    
+
+		<!-- Modal -->
+		<div class="modal fade" id="error-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+			        	<span class="text-color-warning"><img src="img/icons/icon-warning.png" class="icon xs" alt="">Error</span>
+			      </div>
+			      <div class="modal-body">
+				      <div class="text-center">
+			      		El ususario y la contraseña que has introducido son incorrectos
+				      </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			      </div>
+				</div>
+		  	</div>
+		</div>	    
+			   
+	    
+
+   
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}

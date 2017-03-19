@@ -1,0 +1,463 @@
+{{= it.include("core/html-start.html") }}
+    
+    {{= it.include("blocks/header-app-confirm.html") }}
+		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
+		
+		<main class="wrapper public bg-clouds-nologo" role="main">
+			
+			<div class="block-info margin-xs-b-15 margin-sm-b-40">
+
+				<p class="h4"><img src="img/icons/icon-plane.png" class="icon sm" alt=""><span>LUN, 22 AGO. 2016</span></p>
+					
+					
+			</div>	
+
+	
+	
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						<div class="padding10">
+							<ul class="list-interlaced">
+								<li>
+								
+									<div class="block-state-flight">
+										
+										<div class="row">
+										
+											<div class="col-xs-6">
+											
+												<span class="display-block">Madrid - Amsterdam</span>
+												<span class="display-block">KLM1704</span>
+										
+											</div>
+											<div class="col-xs-6">
+											
+									    	<div class="pull-right text-right">
+										    	
+										    	<span class="delayed ontime caps">En hora</span>
+		
+									    	</div>										
+										</div>
+										
+										</div>
+									</div>
+								</li>
+								<li>
+								
+									<div class="block-state-flight">
+										
+										<div class="row">
+										
+											<div class="col-xs-6">
+											
+												<span class="display-block">Madrid - Amsterdam</span>
+												<span class="display-block">KLM1704</span>
+										
+											</div>
+											<div class="col-xs-6">
+											
+									    	<div class="pull-right text-right">
+										    	
+										    	<span class="delayed ontime caps">En hora</span>
+		
+									    	</div>										
+										</div>
+										
+										</div>
+									</div>
+								</li>								
+								
+							</ul>
+						
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				
+			</div>
+	
+			<div class="container">
+
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#error-login">Añadir otra dirección</button>
+	
+						</div>
+				</div><! / -- row -->	
+
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#error-login">Guardar</button>
+	
+						</div>
+				</div><! / -- row -->	
+				
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modal-resumen">Modal Resumen</button>
+	
+						</div>
+				</div><! / -- row -->			
+	
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modal-alternativo">Modal vuelo alternativo</button>
+	
+						</div>
+				</div><! / -- row -->		
+				
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modal-confirmar">Modal confirmar vuelo</button>
+	
+						</div>
+				</div><! / -- row -->													
+				<div class="row">
+					
+						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
+							<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#modal-confirmar2">Modal confirmar vuelo2</button>
+	
+						</div>
+				</div><! / -- row -->						
+				
+				
+				
+								
+			</div>			
+		
+
+
+		</main>	
+	    
+	    
+
+		<!-- Modal -->
+		<div class="modal fade" id="error-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+			        	<span class="text-color-warning"><img src="img/icons/icon-warning.png" class="icon xs" alt="">Error</span>
+			      </div>
+			      <div class="modal-body">
+				      <div class="text-center">
+			      		El ususario y la contraseña que has introducido son incorrectos
+				      </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+			      </div>
+				</div>
+		  	</div>
+		</div>	    
+			   
+
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="modal-resumen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+				  		<h4 class="h4">¿Vuelo con conexión?</h4>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+        
+        			</div>
+			      <div class="modal-body">
+				      <div class="text-center">
+			      		Por favor, indica si el vuelo que vas a dar de alta es una conexión del vuelo anterior.
+				      </div>
+			      </div>
+			      <div class="modal-footer">
+			        	<div class="row margin-b-15">
+				        	<div class="col-xs-12">
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Sí es una conexión</button>
+					        	
+				        	</div>
+			        	</div>
+			        	<div class="row margin-b-15">
+				        	<div class="col-xs-12">			        	
+								<button type="button" class="btn btn-default" data-dismiss="modal">No, es un vuelo independiente</button>
+
+				        	</div>
+			        	</div>			        	
+
+			      </div>
+				</div>
+		  	</div>
+		</div>	 
+
+		<!-- Modal -->
+		<div class="modal fade" id="modal-alternativo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+				  		<h4 class="h4">Añadir vuelo alternativo</h4>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+        
+        			</div>
+			      <div class="modal-body">
+
+
+						<form>
+							<div class="row">
+								
+								<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
+			
+								  <div class="form-group">
+									    <label for="" class="sr-only">Compañía</label>
+									    <input type="text" class="form-control" id="" placeholder="Compañía">
+								  </div>
+								</div>
+								<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
+			
+								  <div class="form-group">
+									    <label for="" class="sr-only">Número de vuelo</label>
+									    <input type="text" class="form-control" id="" placeholder="Número de vuelo">
+								  </div>
+								</div>								
+								
+							</div><! / -- row -->	
+	
+								
+						</form>
+						<div class="clearfix underline margin-b-15 "></div>
+						<div class="flights-info">
+							<div class="info">
+								
+								
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-6">
+											<span class="h3">SALIDA</span>											
+										</div>
+									</div>								
+									<div class="row">
+										<div class="col-xs-6">
+											<span class="h3 text-color-primary">Vie., 26 Ago. 2016</span>	
+										</div>
+
+									</div>
+								
+								</div>
+								
+						    	
+				    		</div>							
+						
+						</div>
+
+
+			      </div>
+			      <div class="modal-footer">
+			        	<div class="row margin-b-15">
+				        	<div class="col-xs-12">
+									<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#error-login">Continuar</button>
+					        	
+				        	</div>
+			        	</div>
+		        	
+
+			      </div>
+				</div>
+		  	</div>
+		</div>	 
+
+
+
+		<!-- Modal -->
+		<div class="modal fade" id="modal-confirmar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+			      <div class="modal-header">
+				  		<h4 class="h4">Confirmar vuelo alternativo</h4>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+        
+        			</div>
+			      <div class="modal-body">
+
+
+					  <div class="block-info-flight">
+			    	
+			    		<div class="container margin-b-10">
+					    	<div class="row">
+						    	
+						    	<div class="col-xs-12 text-center">
+							    	
+							    	<date class="display-block">LUN, 22 AGO. 2016</date>
+							    	
+							    	<span class="city">GLA</span><img src="img/icons/icon-plane.png" class="icon md" alt=""><span class="city">AMS</span>
+							    	<span class="num-flight display-block margin-b-30">KLM 6996</span>
+							    	
+							    	
+						    	</div>
+						    	
+						    	
+					    	</div>
+					    	
+					    	<div class="row">
+						    	<div class="col-xs-6">
+							    	
+							    	Salida en 2 hr 26 min
+						    	</div>
+						    	<div class="col-xs-6">
+							    	
+							    	<div class="pull-right text-right">
+								    	
+								    	<span class="delayed ontime caps">En hora</span>
+								    	<span class="delayed delay caps">Retraso</span>
+								    	<span class="delayed cancelled caps">Cancelado</span>
+								    	
+								    	
+							    	</div>
+							    	
+						    	</div>
+						    	
+						    	
+				    	</div>		
+				    	
+			    		</div>	  
+			    	
+			    	
+			    	
+						<div class="flights-info">
+							
+							
+							<div class="info">
+								
+							
+								
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-6">
+											<span class="h3">SALIDA</span>											
+										</div>
+									</div>								
+									<div class="row">
+										<div class="col-xs-6">
+											<strong>GLA</strong> Glasgow
+											<span class="h2 text-color-primary">11:45 AM</span>	
+										</div>
+										<div class="col-xs-3">
+											<div class="text-center">
+												Terminal
+												<span class="display-block text-color-primary">2</span>
+												
+											</div>
+											
+											
+										</div>
+										<div class="col-xs-3">
+											
+											<div class="text-center">
+												Puerta
+												<span class="display-block text-color-primary">23C</span>
+												
+											</div>										
+											
+										</div>
+										
+										
+										
+									</div>
+								
+								</div>
+								
+							</div>
+							<div class="info">
+								
+							
+								
+								<div class="container">
+									<div class="row">
+										<div class="col-xs-6">
+											<span class="h3">LLEGADA</span>											
+										</div>
+									</div>								
+									<div class="row">
+										<div class="col-xs-6">
+											<strong>GLA</strong> Glasgow
+											<span class="h2 text-color-primary">11:45 AM</span>	
+										</div>
+										<div class="col-xs-3">
+											<div class="text-center">
+												Terminal
+												<span class="display-block text-color-primary">2</span>
+												
+											</div>
+											
+											
+										</div>
+										<div class="col-xs-3">
+											
+											<div class="text-center">
+												Puerta
+												<span class="display-block text-color-primary">23C</span>
+												
+											</div>										
+											
+										</div>
+										
+										
+										
+									</div>
+								
+								</div>
+								
+							</div>
+							
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-6"><span class="text-color-white padding-tb-10 display-inline-block">Duración 2h 30min</span></div>
+								</div>
+													
+							
+
+							</div>	
+						</div>
+	
+			    	
+			    	</div>  	
+
+
+
+				
+			      </div>
+			      <div class="modal-footer">
+			        	<div class="row margin-b-15">
+				        	<div class="col-xs-12">
+									<button role="button" type="button"  class="btn btn-default">Añadir vuelo conectado</button>
+				        	</div>
+			        	</div>
+			        	<div class="row margin-b-15">
+				        	<div class="col-xs-12">
+									<button role="button" type="button"  class="btn btn-default">Finalizar</button>
+				        	</div>
+			        	</div>		        	
+
+			      </div>
+				</div>
+		  	</div>
+		</div>	 
+
+	    
+
+   
+    {{= it.include("blocks/footer.html") }}
+    
+    {{= it.include("core/plugins.js.html") }}
+	    
+{{= it.include("core/html-end.html") }}
