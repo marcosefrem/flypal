@@ -160,16 +160,17 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 margin-b-15 margin-b-30">
-						<div class="text-center">
-							<span class="h3 display-inline-block-xs bg-color-primary-dark padding5">
-							
-								<span class="text-color-primary bold">IB 3724</span> <span class="text-color-white bold">MAD-AMS</span>
-								
-								
-							</span>
-						</div>
-					</div>			
+
+					<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
+	
+					  <div class="form-group">
+						    <label for="" class="sr-only">Número de vuelo</label>
+						    <input type="text" class="form-control" id="" placeholder="Número de vuelo">
+					  </div>
+					</div>	
+
+
+		
 				</div>
 			</div>
 			
@@ -184,10 +185,10 @@
 							<div class="col-xs-12">
 
 								<div class="form-group margin-b-0">													
-									<div class="radio">
-										<input type="radio" id="radio1" name=""> 
-										<label for="radio1">
-											UX 6012 PMI - MAD
+									<div class="checkbox">
+										<input type="checkbox" id="checkbox1" name=""> 
+										<label for="checkbox1">
+											UX 6012 PMI - MAD <date> Lun, 23 mar</date>
 										</label>
 									</div>									
 								</div>							
@@ -208,10 +209,10 @@
 							<div class="col-xs-12">
 
 								<div class="form-group margin-b-0">													
-									<div class="radio">
-										<input type="radio" id="radio2" name=""> 
-										<label for="radio2">
-											IB 2708 MAD - BCN
+									<div class="checkbox">
+										<input type="checkbox" id="checkbox2" name=""> 
+										<label for="checkbox2">
+											IB 2708 MAD - BCN <date> Lun, 23 mar</date>
 										</label>
 									</div>									
 								</div>	
@@ -229,10 +230,10 @@
 							<div class="col-xs-12">
 
 								<div class="form-group margin-b-0">													
-									<div class="radio">
-										<input type="radio" id="radio3" name=""> 
-										<label for="radio3">
-											IB 2708 MAD - BCN
+									<div class="checkbox">
+										<input type="checkbox" id="checkbox3" name=""> 
+										<label for="checkbox3">
+											IB 2708 MAD - BCN <date> Lun, 23 mar</date>
 										</label>
 									</div>									
 								</div>	
@@ -254,7 +255,7 @@
 				<div class="row">
 					
 						<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-15 margin-sm-b-40">											
-							<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#error-login">Añadir otra conexión</button>
+							<button type="submit" class="btn btn-default" data-toggle="modal" data-target="#error-login">Desconectar</button>
 	
 						</div>
 				</div><! / -- row -->	
@@ -330,6 +331,8 @@ $('.owl-carousel').owlCarousel({
     autoplayHoverPause:true,
 	smartSpeed:450,   
     })
+
+
 
 </script>
 

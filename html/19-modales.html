@@ -260,7 +260,54 @@
 			
 								  <div class="form-group">
 									    <label for="" class="sr-only">Compañía</label>
-									    <input type="text" class="form-control" id="" placeholder="Compañía">
+									    <input type="text" class="form-control" id="inputCompany" placeholder="Compañía">
+									    
+								
+									    <span id="results"></span>
+									
+										<!--- /DG --->
+										<script>
+											$(function() {
+												/*function log( message ) {
+													$( "<div>" ).text( message ).prependTo( "#log" );
+													$( "#log" ).scrollTop( 0 );
+												}*/
+												$("#inputCompany" ).autocomplete({
+													source: function( request, response ) {
+														var urlWS = "http://gesvaltprepro.openit.es/WS_RightFlyAPP/RightFlyWS.asmx/searchAirlines";
+														var tokenId = obtenerToken();
+														var value = $("#inputCompany").val();
+														var data_air = "{'sTokenId' : '" + tokenId + "', 'sStringSearch' : '" + value.toUpperCase() + "'}";
+														$.ajax({
+															type: "POST",
+															crossDomain: true,
+															url: '' + urlWS + '',
+															data: data_air,
+															contentType: "application/json; charset=utf-8",
+															cache: false,
+															dataType: 'json',
+															success: function (data) {
+																response($.map(data['d'], function (item) {
+																	return { 
+																		value: item.nombre_autocompletar,
+																		label: item.nombre_autocompletar,
+																		description: item.nombre_autocompletar,
+																		id: item.icao
+																		};
+																	}
+																));
+															}
+														});
+														
+													},
+													minLength: 2,
+													select: function( event, ui ){
+														//log( "Selected: " + ui.item.value + " aka " + ui.item.id );
+													}
+												});
+											});
+										</script>
+										<!--- /DG --->  
 								  </div>
 								</div>
 								<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
@@ -270,13 +317,27 @@
 									    <input type="text" class="form-control" id="" placeholder="Número de vuelo">
 								  </div>
 								</div>								
+						
+								
+									
 								<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
 			
-								  <div class="form-group">
-									    <label for="" class="sr-only">SALIDA</label>
-									    <input type="text" class="form-control" id="" placeholder="SALIDA Vie., 26 Ago. 2016">
-								  </div>
-								</div>										
+									  
+					                <div class='date js-datepicker' id='datetimepicker1'>
+						                
+										<label for="" class="sr-only">Salida</label>
+					                    <input type='text' class="form-control" readonly placeholder="Salida/Vie. 26 Agosto"/>
+					                    <span class="input-group-addon glyphicon">
+					                        <span class="icon-calendar xs"></span>
+					                    </span>
+					                </div>
+														  
+								  
+								  
+								</div>
+								
+								
+											
 							</div><! / -- row -->	
 	
 								
@@ -427,7 +488,7 @@
 			      <div class="modal-footer">
 			        	<div class="row margin-b-15">
 				        	<div class="col-xs-12">
-									<button role="button" type="button"  class="btn btn-default">Añadir vuelo conectado</button>
+									<button role="button" type="button"  class="btn btn-primary">Añadir vuelo conectado</button>
 				        	</div>
 			        	</div>
 			        	<div class="row margin-b-15">
@@ -534,7 +595,7 @@
 			      <div class="modal-footer">
 			        	<div class="row margin-b-15">
 				        	<div class="col-xs-12">
-									<button role="button" type="button"  class="btn btn-default">Añadir vuelo conectado</button>
+									<button role="button" type="button"  class="btn btn-primary">Añadir vuelo conectado</button>
 				        	</div>
 			        	</div>
 			        	<div class="row margin-b-15">
@@ -592,6 +653,8 @@ $('.owl-carousel').owlCarousel({
     autoplayHoverPause:true,
 	smartSpeed:450,   
     })
+
+
 
 </script>
 

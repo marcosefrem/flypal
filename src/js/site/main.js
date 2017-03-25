@@ -25,6 +25,16 @@ $(function() {
    });		
 	
 	
+
+	$('#modal-alternativo').on('hide.bs.modal', function () {
+
+	    
+	     $('.datepicker').remove();
+	    
+	})	
+		
+	
+	
 	windowHeight = $(window).height();	
 	var heightHeader =$('header').outerHeight();
 	$('main.bg-clouds-nologo').css('min-height', windowHeight -heightHeader);
