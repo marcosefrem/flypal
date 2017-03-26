@@ -22,13 +22,14 @@ function initAsync(){
 	//Date Picker
 	$('.js-datepicker').datepicker({
 
-		autoclose: true,
-		locale: 'es'
+		autoclose: false,
+		locale: 'es',
+		clearBtn: true
 	});
 	
 	$('.datepicker-days').on('click', 'td.day', function (e) {
         e.preventDefault();
-        $('.js-datepicker').datepicker('hide');
+       // $('.js-datepicker').datepicker('hide');
         return false;
     });	
 	$('.datepicker').click(function(){
