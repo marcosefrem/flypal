@@ -1,4 +1,4 @@
-{{= it.include("core/html-start.html") }}
+	{{= it.include("core/html-start.html") }}
     
     {{= it.include("blocks/header-app-add.html") }}
 		<!-- Contenido empieza aqui - RESPETAR LA TABULACION -->
@@ -50,60 +50,64 @@
 									</div>
 								</div>-->
 
-								<div class="form-group">
-									    <label for="" class="sr-only">Compañía</label>
-									    <input type="text" class="form-control" id="inputCompany" placeholder="Compañía">
-									    
-								
-									    <span id="results"></span>
+								<div class="row">
 									
-										<!--- /DG --->
-										<script>
-											$(function() {
-												/*function log( message ) {
-													$( "<div>" ).text( message ).prependTo( "#log" );
-													$( "#log" ).scrollTop( 0 );
-												}*/
-												$("#inputCompany" ).autocomplete({
-													source: function( request, response ) {
-														var urlWS = "http://gesvaltprepro.openit.es/WS_RightFlyAPP/RightFlyWS.asmx/searchAirlines";
-														var tokenId = obtenerToken();
-														var value = $("#inputCompany").val();
-														var data_air = "{'sTokenId' : '" + tokenId + "', 'sStringSearch' : '" + value.toUpperCase() + "'}";
-														$.ajax({
-															type: "POST",
-															crossDomain: true,
-															url: '' + urlWS + '',
-															data: data_air,
-															contentType: "application/json; charset=utf-8",
-															cache: false,
-															dataType: 'json',
-															success: function (data) {
-																response($.map(data['d'], function (item) {
-																	return { 
-																		value: item.nombre_autocompletar,
-																		label: item.nombre_autocompletar,
-																		description: item.nombre_autocompletar,
-																		id: item.icao
-																		};
+									<div class="col-xs-12 col-sm-8 col-sm-offset-2 margin-xs-b-0 margin-sm-b-40">
+										<div class="form-group">
+											    <label for="" class="sr-only">Compañía</label>
+											    <input type="text" class="form-control" id="inputCompany" placeholder="Compañía">
+											    
+										
+											    <span id="results"></span>
+											
+												<!--- /DG --->
+												<script>
+													$(function() {
+														/*function log( message ) {
+															$( "<div>" ).text( message ).prependTo( "#log" );
+															$( "#log" ).scrollTop( 0 );
+														}*/
+														$("#inputCompany" ).autocomplete({
+															source: function( request, response ) {
+																var urlWS = "http://gesvaltprepro.openit.es/WS_RightFlyAPP/RightFlyWS.asmx/searchAirlines";
+																var tokenId = obtenerToken();
+																var value = $("#inputCompany").val();
+																var data_air = "{'sTokenId' : '" + tokenId + "', 'sStringSearch' : '" + value.toUpperCase() + "'}";
+																$.ajax({
+																	type: "POST",
+																	crossDomain: true,
+																	url: '' + urlWS + '',
+																	data: data_air,
+																	contentType: "application/json; charset=utf-8",
+																	cache: false,
+																	dataType: 'json',
+																	success: function (data) {
+																		response($.map(data['d'], function (item) {
+																			return { 
+																				value: item.nombre_autocompletar,
+																				label: item.nombre_autocompletar,
+																				description: item.nombre_autocompletar,
+																				id: item.icao
+																				};
+																			}
+																		));
 																	}
-																));
+																});
+																
+															},
+															minLength: 2,
+															select: function( event, ui ){
+																//log( "Selected: " + ui.item.value + " aka " + ui.item.id );
 															}
 														});
-														
-													},
-													minLength: 2,
-													select: function( event, ui ){
-														//log( "Selected: " + ui.item.value + " aka " + ui.item.id );
-													}
-												});
-											});
-										</script>
-										<!--- /DG --->  
-								  </div>
+													});
+												</script>
+												<!--- /DG --->  
+										  </div>
 
 
-
+									</div>
+								</div><! / -- row -->	
 
 
 								<div class="row">
