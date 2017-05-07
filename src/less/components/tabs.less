@@ -5,6 +5,19 @@
 
 .nav-tabs {
 	
+	
+	&.affix{
+		position: fixed;
+		left: 0;
+		width: 100%;
+		top:57px;
+		z-index: 9;
+		
+		+ .tab-content{
+			margin-top: 65px;
+		}
+	}
+	
 	li{
 		
 		&.active{

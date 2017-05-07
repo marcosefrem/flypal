@@ -113,12 +113,9 @@ span.upload-path {
 
 .no-legacy-ie {	// personalizados sólo en IE > 9
 	
-
 	.radio label, .checkbox label{ 
-		padding-left: 0;
 		margin-left: 0px;
 		strong{
-			padding-left: 30px;
 		}
 	}
 	
@@ -132,6 +129,11 @@ span.upload-path {
 				top: 3px;
 			}
 		}
+		@media (max-width: @screen-max-sm) {
+			padding-left: 30px!important;
+			padding-top: 1px;
+		}		
+		
 	}
 
 	// Checkbocks
