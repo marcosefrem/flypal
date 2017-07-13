@@ -22,27 +22,37 @@ function initAsync(){
 	//Date Picker
 	$('.js-datepicker').datepicker({
 
-		autoclose: true,
+		autoclose: false,
 		locale: 'es',
 		clearBtn: true
-	});
-	
-	/*
-	$('.datepicker-days').on('click', 'td.day', function (e) {
-       // e.preventDefault();
-        $('.js-datepicker').datepicker('hide');
-       // return false;
-    });	
-	*/
 
+	});
+	$(document).on( 'touchend click', '.day', function(e){
+		e.preventDefault();
+        texto =  $(this).text();
+		$(this).trigger('click');
+		$('.js-datepicker').datepicker('hide');
+	
+	} );
+	$('.datepicker-days .day').on('click', function (e) {
+        alert('click');
+        e.preventDefault();
+        texto =  $(this).text();
+       // $('.js-datepicker').datepicker('hide');
+        return false;
+    });	
+	
+	$('.js-datepicker').on('show', function(ev){
+		
+		
+	});
 	$('.js-datepicker').on('changeDate', function(ev){
- 	   $(this).datepicker('hide');
- 	   
+ 	  // $(this).datepicker('hide');
 	});
 	$('.js-datepicker').on('show', function(ev){
 		$('input').blur();	   
 	});
-	
+
 	//Tooltips
 	$('[data-toggle="tooltip"]').tooltip({
 	    animated: 'fade',

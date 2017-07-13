@@ -580,7 +580,7 @@ select.selectpicker {
 .no-legacy-ie .checkbox input[type=checkbox]:checked + label::after,
 .no-legacy-ie .checkbox-inline input[type=checkbox]:checked + label::after {
 	
-    border: 2px solid #12233f;
+    border: 1px solid #12233f;
     border-radius: 50%;
     content: "";
     display: block;
@@ -786,9 +786,11 @@ background: url('../img/icons/icon-arrow.png');
 }
 
 
-
-.datepicker .active.day,
-.datepicker table tr td.day:hover, .datepicker table tr td.day.focused {
+//.datepicker table tr td.day:hover, .datepicker table tr td.day.focused,
+.datepicker table tr td.day:hover{
+	background: none!important;
+}
+.datepicker table tr td.day.focused, .datepicker .active.day{
 	background: none!important;
 	position: relative!important;
 	&:before{
@@ -859,4 +861,9 @@ input[type="text"]{
 			display: none;
 		}
 	}
+}
+
+
+td.day{
+	cursor: pointer;
 }
